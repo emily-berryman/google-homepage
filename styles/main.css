@@ -1,3 +1,11 @@
+.page-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 a {
     text-decoration: none;
     color: rgba(0,0,0,0.87)
@@ -7,10 +15,6 @@ body {
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
-}
-.page-container {
-    width: 1180px;
-    height: 944px;
 }
 
 .nav-container {
@@ -25,6 +29,7 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;   
+    align-items: center;
 }
 
 .nav li {
@@ -35,6 +40,17 @@ body {
 .apps-icon {
     height: 25px;
 }
+
+.svg {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--color-gray-500);
+  }
+  
 
 .top-third-container {
     width: 1180px;
