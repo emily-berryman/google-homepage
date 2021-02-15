@@ -1,3 +1,4 @@
+/* entire-page styles */
 .page-container {
     display: flex;
     height: 100%;
@@ -17,77 +18,116 @@ body {
     color: #222;
 }
 
-.nav-container {
-    width: 1180px;
-    height: 60px;
+/* nav */
+
+li {
+    display: inline;
+    /* /* font-family: arial, sans-serif; */
+    font-size: 14px; 
+    margin: 5px;
+    vertical-align: middle; 
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* list-style-type: none; */
     margin: 0;
-    padding: 0;
-    text-decoration: none;   
-    align-items: center;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* text-decoration: none;   
+    align-items: center; */
 }
 
-.nav li {
+.left-align {
+    float: left;
+}
+
+.right-align {
+    float: right;
+}
+
+/* .nav li {
     text-decoration: none;
     padding: 4px;
+} */
+
+/* search area */
+
+.center {
+    margin: auto;
 }
 
-.apps-icon {
+
+form {
+    margin: auto;
+}
+
+input {
+    height: 40px;
+    width: 500px;
+    padding: 0px, 40px;
+    border-width: 1pt;
+    border-style: solid;
+    border-color: rgba(201, 202, 201, 0.973);
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.mic-button
+{
+    width: 25px;
     height: 25px;
+    display: block;
+    margin: auto;
+    transform: translate(900%,-220%);
+    border: none;
+    background: transparent;
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
 
-.svg {
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    fill: var(--color-gray-500);
-  }
-  
+.search-button {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: right;
+    transform: translate(100%,-390%);
+    border: none;
+    background: transparent;
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+} 
 
-.top-third-container {
-    width: 1180px;
-    height: 290px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+    margin: auto;
 }
 
-.logo-container {
-    width: 446px;
-    height: 230px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.google {
+    margin-top: 180px;
+     margin-bottom: 20px;
+    }
 
-.logo-container img {
-    padding-top: 100px;
-}
-
-.search-bar-area {
-    width: 1180px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-}
-
-#search-input {
-    width: 548px;
-    height: 46px;
-    background: #fff;
-    display: flex;
-    border: 1px solid #dfe1e5;
-    box-shadow: none;
-    border-radius: 24px;
-    z-index: 3;
+.search {
+    background-color:#f1ededec;
+    width: 130px;
+    height: 35px;
+    color: rgb(106, 106, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border-radius: 4px;
+    border: none;
+    margin: none;
 }
 
 .bottom-third-page {
@@ -95,16 +135,37 @@ body {
     height: 340.67px;
 }
 
-.footer {
-    width: 1180px;
-    height: 93.33px;
-    background-color: #f2f2f2;
-    padding: 15px;
-    border-bottom: 1px solid #dadce0;
-   
+
+footer {
+    background-color:#f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: .5pt;
+    border-style: solid;
+    border-color: rgb(236, 235, 235)
 }
 
-.location-bar {
+.grey {
+    color: rgb(106, 106, 107);
+}
+
+.footerright {
+    float: right;
+    padding-right: 20px;
+}
+
+.footerleft {
+    float: left;
+    padding-left: 20px;
+}
+
+
+
+/* .location-bar {
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
@@ -117,7 +178,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 .footer-links a {
     color: rgba(0,0,0,.54);
